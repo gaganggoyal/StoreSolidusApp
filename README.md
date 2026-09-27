@@ -1,24 +1,26 @@
-# README
+# StoreSolidusApp
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An online store built on [Solidus](https://solidus.io), the open-source Rails
+e-commerce framework. I used it to learn how a full storefront fits
+together: catalogue, cart, checkout, accounts and admin.
 
-Things you may want to cover:
+- Solidus core, backend (admin) and API, with the starter storefront
+- PayPal checkout through `solidus_paypal_commerce_platform`
+- Custom branding on the storefront
+- RSpec, FactoryBot and RuboCop set up for testing and linting
 
-* Ruby version
+**Stack:** Ruby 2.7, Rails 7.0, Solidus, PostgreSQL
 
-* System dependencies
+## Run it
 
-* Configuration
+```bash
+bundle install
+bin/rails db:setup
+bin/rails server
+```
 
-* Database creation
+Run `bin/rails solidus:sample:load` if you want demo products.
 
-* Database initialization
+---
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+An early learning project from 2023, kept for reference and archived. My current work is on [my profile](https://github.com/gaganggoyal) and at [gagan.indiaoffers.in](https://gagan.indiaoffers.in).
